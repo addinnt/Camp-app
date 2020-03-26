@@ -36,4 +36,10 @@ dependencies {
     implementation "androidx.cardview:cardview:1.0.0"
     //add picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
+    //add glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    //add cicrle image
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
 }

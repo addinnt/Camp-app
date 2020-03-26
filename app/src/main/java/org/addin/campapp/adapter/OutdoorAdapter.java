@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 
 import org.addin.campapp.R;
@@ -43,6 +44,8 @@ public class OutdoorAdapter extends RecyclerView.Adapter<OutdoorAdapter.ViewHold
 
         //menampilkan gambar menggunakan picasso
         Picasso.get().load(item.getLogo()).into(holder.logoImage);
+        Picasso.get().setLoggingEnabled(true);
+        //Glide.with(context).load(item.getLogo()).into(holder.logoImage);
     }
 
     @Override
