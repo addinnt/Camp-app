@@ -1,6 +1,7 @@
 package org.addin.campapp.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,12 +17,14 @@ import org.addin.campapp.models.EquipmentModel;
 import java.util.List;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class OutdoorAdapter extends RecyclerView.Adapter<OutdoorAdapter.ViewHolder> {
 
     private Context context;
     private List<EquipmentModel> items;
+
 
     public OutdoorAdapter(Context context, List<EquipmentModel> items) {
         this.context = context;
@@ -45,7 +48,8 @@ public class OutdoorAdapter extends RecyclerView.Adapter<OutdoorAdapter.ViewHold
         //menampilkan gambar menggunakan picasso
         Picasso.get().load(item.getLogo()).into(holder.logoImage);
         Picasso.get().setLoggingEnabled(true);
-        //Glide.with(context).load(item.getLogo()).into(holder.logoImage);
+
+
     }
 
     @Override
@@ -57,12 +61,18 @@ public class OutdoorAdapter extends RecyclerView.Adapter<OutdoorAdapter.ViewHold
 
         ImageView logoImage;
         TextView kategoriText;
+        CardView cardView;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             logoImage = itemView.findViewById(R.id.image_logo);
             kategoriText = itemView.findViewById(R.id.text_kategori);
+            cardView = itemView.findViewById(R.id.cardview);
+
+
         }
+
+
     }
 }
