@@ -1,18 +1,16 @@
 package org.addin.campapp.adapter;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 
 import org.addin.campapp.R;
-import org.addin.campapp.models.EquipmentModel;
+import org.addin.campapp.models.ItemsModel;
 
 import java.util.List;
 
@@ -20,13 +18,13 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class OutdoorAdapter extends RecyclerView.Adapter<OutdoorAdapter.ViewHolder> {
+public class TendaAdapter extends RecyclerView.Adapter<TendaAdapter.ViewHolder> {
 
     private Context context;
-    private List<EquipmentModel> items;
+    private List<ItemsModel> items;
 
 
-    public OutdoorAdapter(Context context, List<EquipmentModel> items) {
+    public TendaAdapter(Context context, List<ItemsModel> items) {
         this.context = context;
         this.items = items;
     }
@@ -41,10 +39,12 @@ public class OutdoorAdapter extends RecyclerView.Adapter<OutdoorAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        EquipmentModel item = items.get(position);
-        // Atur image di baris ini, dapat menggunakan Picasso atau Glide
-        holder.kategoriText.setText(item.getKategori());
+        ItemsModel item = items.get(position);
+        holder.nameText.setText(item.getNama());
+        holder.descText.setText(item.getDesc());
+        holder.priceText.setText(item.getHarga());
 
+        // Atur image di baris ini, dapat menggunakan Picasso atau Glide
         //menampilkan gambar menggunakan picasso
         Picasso.get().load(item.getLogo()).into(holder.logoImage);
         Picasso.get().setLoggingEnabled(true);
@@ -60,15 +60,17 @@ public class OutdoorAdapter extends RecyclerView.Adapter<OutdoorAdapter.ViewHold
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView logoImage;
-        TextView kategoriText;
-        CardView cardView;
+        TextView nameText;
+        TextView priceText;
+        TextView descText;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            logoImage = itemView.findViewById(R.id.image_logo);
-            kategoriText = itemView.findViewById(R.id.text_kategori);
-            cardView = itemView.findViewById(R.id.cardview);
+            logoImage= itemView.findViewById(R.id.item_logo);
+            nameText = itemView.findViewById(R.id.item_name);
+            priceText =itemView.findViewById(R.id.item_price);
+            descText = itemView.findViewById(R.id.item_desc);
 
 
         }
