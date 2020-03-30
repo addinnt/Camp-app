@@ -51,121 +51,121 @@
         app:layout_constraintGuide_begin="20dp"
         app:layout_constraintGuide_percent="0.32"/>
 
-<!--    <androidx.recyclerview.widget.RecyclerView-->
-<!--        android:id="@+id/rv_teams"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:layout_marginTop="30dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/text_title" />-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_teams"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_title" />
 
-    <ImageView
-        android:id="@+id/rec1"
-        android:layout_width="340dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/tenda"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/line"
-        android:onClick="handleTenda"/>
+<!--    <ImageView-->
+<!--        android:id="@+id/rec1"-->
+<!--        android:layout_width="340dp"-->
+<!--        android:layout_height="133dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:src="@drawable/tenda"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/line"-->
+<!--        android:onClick="handleTenda"/>-->
 
-    <TextView
-        android:id="@+id/tvTenda"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tenda"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="87dp"
-        android:layout_marginLeft="30dp"
-        app:layout_constraintLeft_toRightOf="@id/guideline3"
-        app:layout_constraintTop_toBottomOf="@id/line"
-        android:onClick="handleTenda"/>
-
-
-    <ImageView
-        android:id="@+id/rec2"
-        android:layout_width="340dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/carier"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rec1"
-        android:onClick="handleCarrier"/>
-
-    <TextView
-        android:id="@+id/tvCarrier"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Carrier"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="58dp"
-        android:layout_marginLeft="30dp"
-        app:layout_constraintLeft_toRightOf="@id/guideline3"
-        app:layout_constraintTop_toBottomOf="@id/rec1"
-        android:onClick="handleCarrier"/>
+<!--    <TextView-->
+<!--        android:id="@+id/tvTenda"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Tenda"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:layout_marginTop="87dp"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/guideline3"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/line"-->
+<!--        android:onClick="handleTenda"/>-->
 
 
+<!--    <ImageView-->
+<!--        android:id="@+id/rec2"-->
+<!--        android:layout_width="340dp"-->
+<!--        android:layout_height="133dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:src="@drawable/carier"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/rec1"-->
+<!--        android:onClick="handleCarrier"/>-->
 
-    <ImageView
-        android:id="@+id/rec3"
-        android:layout_width="340dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/cooking_set"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rec2"
-        android:onClick="handleCookingSet"/>
-
-    <TextView
-        android:id="@+id/tvCooking"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="64dp"
-        android:text="Cooking Set"
-        android:textColor="#FFFFFF"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toRightOf="@id/guideline3"
-        app:layout_constraintTop_toBottomOf="@id/rec2"
-        android:onClick="handleCookingSet"/>
+<!--    <TextView-->
+<!--        android:id="@+id/tvCarrier"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Carrier"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:layout_marginTop="58dp"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/guideline3"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/rec1"-->
+<!--        android:onClick="handleCarrier"/>-->
 
 
 
+<!--    <ImageView-->
+<!--        android:id="@+id/rec3"-->
+<!--        android:layout_width="340dp"-->
+<!--        android:layout_height="133dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:src="@drawable/cooking_set"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/rec2"-->
+<!--        android:onClick="handleCookingSet"/>-->
 
-    <ImageView
-        android:id="@+id/rec4"
-        android:layout_width="340dp"
-        android:layout_height="133dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/other"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rec3"
-        android:onClick="handleOther"/>
+<!--    <TextView-->
+<!--        android:id="@+id/tvCooking"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_marginTop="64dp"-->
+<!--        android:text="Cooking Set"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/guideline3"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/rec2"-->
+<!--        android:onClick="handleCookingSet"/>-->
 
-    <TextView
-        android:id="@+id/tvOther"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Other"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:layout_marginTop="58dp"
-        android:layout_marginLeft="30dp"
-        app:layout_constraintLeft_toRightOf="@id/guideline3"
-        app:layout_constraintTop_toBottomOf="@id/rec3"
-        android:onClick="handleOther"/>
+
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/rec4"-->
+<!--        android:layout_width="340dp"-->
+<!--        android:layout_height="133dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:src="@drawable/other"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/rec3"-->
+<!--        android:onClick="handleOther"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvOther"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Other"-->
+<!--        android:textSize="25sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:layout_marginTop="58dp"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        app:layout_constraintLeft_toRightOf="@id/guideline3"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/rec3"-->
+<!--        android:onClick="handleOther"/>-->
 
 
 
