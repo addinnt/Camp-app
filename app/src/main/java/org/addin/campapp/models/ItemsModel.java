@@ -3,18 +3,13 @@ package org.addin.campapp.models;
 public class ItemsModel {
     private String nama,logo,desc,harga, kategori;
 
-    public ItemsModel(String nama, String logo, String desc, String harga, String kategori) {
+    public ItemsModel(String nama, String logo, String desc, String harga) {
         this.nama = nama;
         this.logo = logo;
         this.desc = desc;
         this.harga = harga;
-        this.kategori = kategori;
     }
 
-    public ItemsModel(String kategori, String logo) {
-        this.logo = logo;
-        this.kategori = kategori;
-    }
 
     public String getNama() {
         return nama;
