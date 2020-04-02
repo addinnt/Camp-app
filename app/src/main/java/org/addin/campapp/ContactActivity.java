@@ -10,6 +10,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 
 public class ContactActivity extends AppCompatActivity {
 
@@ -18,6 +19,8 @@ public class ContactActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_contact);
     }
 
@@ -40,23 +43,20 @@ public class ContactActivity extends AppCompatActivity {
 
     public void handleFacebook(View view) {
 
-        Intent facebookIntent = getOpenFacebookIntent(this);
-        startActivity(facebookIntent);
+        Uri uri = Uri.parse("https://www.facebook.com/malang.camp/");
+        Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
 
-    }
-
-    public static Intent getOpenFacebookIntent(Context context) {
+        likeIng.setPackage("com.facebook.katana");
 
         try {
-            context.getPackageManager()
-                    .getPackageInfo("com.facebook.katana", 0); //Checks if FB is even installed.
-            return new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("fb://profile/254175194653125")); //Trys to make intent with FB's URI
-        } catch (Exception e) {
-            return new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("https://www.facebook.com/malang.camp/")); //catches and opens a url to the desired page
+            startActivity(likeIng);
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://www.facebook.com/malang.camp/")));
         }
     }
+
+
 
     public void handleMaps(View view) {
         Uri uri = Uri.parse("https://goo.gl/maps/5VJ1DuuSA9aasoan7/");
